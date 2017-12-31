@@ -215,3 +215,17 @@ footer{
     height:250px ;
     float:left; 
 }
+aside{
+    color: white;
+}
+#news,input{
+    margin-bottom: 10px;
+}
+
+#displayData{
+    color: white;
+    float: right;
+    font-weight: bold;
+    font-size: 16px;
+    padding-right: 10px;
+}

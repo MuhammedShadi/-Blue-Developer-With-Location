@@ -2,7 +2,8 @@
     <html>
         <head>
             <link rel="stylesheet" href="css/style.css" type="text/css">
-              <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+            <script type="text/javascript" src="Js/news.js"></script>   
+            <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
             <title>Blue Developer Directory</title>
         </head>
         <body>
@@ -36,36 +37,46 @@
                             <li><a href="browse.html">Internet Marketing</a></li>
                             <li><a href="browse.html">XHTML Templates</a></li>
                         </ul>
-                    </nav>
-                </aside>
+                        <br><br>
+                        <div>
+                            <h3>NewsLetter</h3>
+                            <p>Please Enter Your E-mail Address</p>
+                            <form id="news" onsubmit="initStorage()">
+                                Name:<input type="text" id="name" name="name">
+                                Email:<input type="email" id="email" name="email">
+                                <input type="submit" value="send">
+                            </form>
+                            </nav>
+                        </aside>
 
-                <section>
-                    <h3>Register As A Developer</h3>
-                    <p>Please use this form to contact a member of our website team</p>
-                    <form method="post" action="somescript.php">
-                        <p>
-                            <label for="first_name">First Name:</label>
-                            <input type="text" name="first_name">
-                        </p>
-                        <p>
-                            <label for="last_name">Last Name:</label>
-                            <input type="text" name="last_name">
-                        </p>
-                        <p>
-                            <label for="email">Email Address: </label>
-                            <input type="email" name="email">
-                        </p>
-                         <p>
-                            <label for="location">Location: </label>
-                             <div id="map"></div>
-                        </p>
-                        <script type="text/javascript" src="location.js"></script>
+                    <section>
+                        <h3>Register As A Developer</h3>
+                        <p>Please use this form to contact a member of our website team</p>
+                        <form method="post" action="somescript.php">
+                            <p>
+                                <label for="first_name">First Name:</label>
+                                <input type="text" name="first_name">
+                            </p>
+                            <p>
+                                <label for="last_name">Last Name:</label>
+                                <input type="text" name="last_name">
+                            </p>
+                            <p>
+                                <label for="email">Email Address: </label>
+                                <input type="email" name="email">
+                            </p>
+                            <p>
+                                <label for="location">Location: </label>
+                            <div id="map"></div>
+                            </p>
+
+                        <script type="text/javascript" src="Js/location.js"></script>
                         <div style="clear:both"></div>
                         <p>
                             <input type="submit" value="Register">
                         </p>
-                    </form>
-                </section>
+                        </form>
+                    </section>
 
             </div>
             <div style="clear;both"></div>
